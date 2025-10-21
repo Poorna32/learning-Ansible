@@ -1,4 +1,4 @@
 - name: Example Role
-  hosts: localhost
+  hosts: all
   roles:
     - example
