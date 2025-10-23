@@ -1,0 +1,8 @@
+- name: Task Variable Playbook
+  hosts: localhost
+  vars:
+    URL_TASK: www.poornachandra.online
+  tasks:
+    - name: Print task variable
+      ansible.builtin.debug:
+        msg: URL_TASK - {{ URL_TASK }}
