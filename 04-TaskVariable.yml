@@ -5,4 +5,4 @@
       ansible.builtin.debug:
         msg: URL_TASK - {{ URL_TASK }}
       vars:
-        URL_PLAY: www.facebook.com
+        URL_TASK: www.facebook.com
