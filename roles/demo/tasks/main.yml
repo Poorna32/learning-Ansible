@@ -1,3 +1,7 @@
 - name: MEME Playbook
   ansible.builtin.debug:
     msg: Welcome to my MEME Page
+
+- name: print role variable
+  ansible.builtin.debug:
+    msg: URL_ROLE - {{ URL_ROLE }}
