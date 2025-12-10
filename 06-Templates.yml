@@ -3,5 +3,5 @@
   tasks:
     - name: Copying a file
       ansible.builtin.copy:
-        src: /Copy.conf
+        src: Copy.conf
         dest: /tmp/Copy.conf
