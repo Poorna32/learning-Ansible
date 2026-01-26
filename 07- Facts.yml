@@ -1,0 +1,14 @@
+- name: Demo on Ansible Facts
+  hosts: localhost
+  tasks:
+    - name: Print Hostname using Facts
+      ansible.builtin.debug:
+        msg: Hostname - {{ ansible_hostname }}
+
+    - name: Print version using Facts
+      ansible.builtin.debug:
+        msg: Version - {{ ansible_version }}
+
+    - name: Print Date and Time  using Facts
+      ansible.builtin.debug:
+        msg: Date and Time  - {{ ansible_date_time }}
