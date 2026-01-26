@@ -12,3 +12,7 @@
     - name: Print Date and Time  using Facts
       ansible.builtin.debug:
         msg: Date and Time  - {{ ansible_date_time }}
+
+    - name: Print servers using Facts
+      ansible.builtin.debug:
+        msg: servers  - {{ ansible_dns }}
