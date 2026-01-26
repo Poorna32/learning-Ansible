@@ -9,7 +9,7 @@
       ansible.builtin.debug:
         msg: Version - {{ ansible_version }}
 
-    - name: Print Date and Time  using Facts
+    - name: Print Date and Time using Facts
       ansible.builtin.debug:
         msg: Date and Time  - {{ ansible_date_time }}
 
