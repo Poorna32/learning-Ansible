@@ -1,0 +1,14 @@
+- name: Demo on Ansible Conditions Playbook
+  hosts: localhost
+  tasks:
+    - name: Install the Nginx Package
+      ansible.builtin.package:
+        name: Nginx
+        state: latest
+      when: type == "Nginx"
+
+    - name: Install the NodeJS Package
+      ansible.builtin.package:
+        name: Tomcat
+        state: latest
+      when: type == "Tomcat"
