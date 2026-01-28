@@ -4,7 +4,7 @@
   tasks:
     - name: Install the Nginx Package
       ansible.builtin.dnf:
-        name: Nginx
+        name: nginx
         state: latest
       when: type == "Nginx"
 
