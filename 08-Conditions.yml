@@ -3,13 +3,13 @@
   become: yes
   tasks:
     - name: Install the Nginx Package
-      ansible.builtin.package:
+      ansible.builtin.dnf:
         name: Nginx
         state: latest
       when: type == "Nginx"
 
     - name: Install the Tomcat Package
-      ansible.builtin.package:
+      ansible.builtin.dnf:
         name: Tomcat
         state: latest
       when: type == "Tomcat"
