@@ -10,6 +10,6 @@
 
     - name: Install the Tomcat Package
       ansible.builtin.dnf:
-        name: Tomcat
+        name: tomcat
         state: latest
       when: type == "Tomcat"
