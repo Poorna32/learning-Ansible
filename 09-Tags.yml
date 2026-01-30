@@ -1,0 +1,14 @@
+- name: Demo on ansible Tags Playbook
+  hosts: localhost
+  tasks:
+    - name: Install Nginx Package
+      ansible.builtin.dnf:
+        msg: nginx
+      state: Installed
+      tags: Nginx
+
+    - name: Install NodeJs Package
+      ansible.builtin.dnf:
+        msg: nodejs
+      state: Installed
+      tags: NodeJs
