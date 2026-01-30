@@ -3,12 +3,12 @@
   tasks:
     - name: Install Nginx Package
       ansible.builtin.dnf:
-        msg: nginx
-      state: Installed
+        name: nginx
+        state: latest
       tags: Nginx
 
     - name: Install NodeJs Package
       ansible.builtin.dnf:
-        msg: nodejs
-      state: Installed
+        name: nodejs
+        state: latest
       tags: NodeJs
