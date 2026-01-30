@@ -1,5 +1,6 @@
 - name: Demo on ansible Tags Playbook
   hosts: localhost
+  become: yes
   tasks:
     - name: Install Nginx Package
       ansible.builtin.dnf:
