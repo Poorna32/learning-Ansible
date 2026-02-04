@@ -1,0 +1,8 @@
+- name: Demo on Ansible Vault Playbook
+  hosts: localhost
+  vars:
+    PASSWORD: Admin@123
+  tasks:
+    - name: Print Vault Password
+      ansible.builtin.debug:
+        msg: PASSWORD - {{ PASSWORD }}
