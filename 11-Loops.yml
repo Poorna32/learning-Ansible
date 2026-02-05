@@ -1,0 +1,11 @@
+- name: Demo on Loops Ansible Playbook
+  hosts: localhost
+  tasks:
+    - name: Print Batsmen Names
+      ansible.builtin.debug:
+        msg: Batsmen - {{ item }}
+      loop:
+        - Glenn Maxwell
+        - Steven Smith
+        - David Warner
+        - RJ Ponting
