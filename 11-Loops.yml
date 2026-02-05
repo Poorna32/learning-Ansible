@@ -1,4 +1,4 @@
-- name: Demo on Loops Ansible Playbook
+- name: Demo on Ansible Loops Playbook
   hosts: localhost
   tasks:
     - name: Print Batsmen Names
