@@ -1,0 +1,15 @@
+- name: Ansible Filters
+  hosts: localhost
+  tasks:
+    - name: Print
+      ansible.builtin.debug:
+        msg: yes we need to install
+      when: install | bool
+- name: Demo on Ansible filters Playbook
+  hosts: localhost
+  tasks:
+    - name: Install a Nginx Package
+      ansible.builtin.dnf:
+        name: nginx
+        state: latest
+      when: install == bool
