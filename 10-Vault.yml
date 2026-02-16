@@ -1,6 +1,7 @@
 - name: Demo on Ansible Vault Playbook
   hosts: localhost
-  vars: PASSWORD
+  vars:
+  PASSWORD :
         !vault |
         $ANSIBLE_VAULT;1.1;AES256
         38396434646463336466633335373230636561323862396633623866343466326465366265353165
