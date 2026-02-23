@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: Installing Packages
-      ansible.builtin.debug:
+      ansible.builtin.dnf:
         msg: "Package Name - {{ item }}"
       loop:
         - nodejs
