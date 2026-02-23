@@ -1,6 +1,5 @@
 - name: Demo on Ansible Loops Playbook
   hosts: localhost
-  become: yes
   tasks:
     - name: Installing Packages
       ansible.builtin.debug:
