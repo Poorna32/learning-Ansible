@@ -1,13 +1,11 @@
 - name: Demo on Ansible Loops Playbook
   hosts: localhost
+  become: yes
   tasks:
-    - name: Print Batsmen Names
+    - name: Installing Packages
       ansible.builtin.debug:
-        msg: Batsmen - {{ item }}
+        msg: "Package Name - {{ item }}"
       loop:
-        - Glenn Maxwell
-        - Steven Smith
-        - David Warner
-        - RJ Ponting
-        - Daneil Martin
-        - Shane Watson
+        - nodejs
+        - nginx
+        - tomcat
