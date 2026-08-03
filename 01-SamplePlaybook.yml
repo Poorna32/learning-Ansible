@@ -4,3 +4,13 @@
     - name: Print Meme Page
       ansible.builtin.debug:
         msg: Welcome to My Meme Page
+
+    - name: Install the latest version of Nginx
+      ansible.builtin.dnf:
+        name: nginx
+        state: latest
+
+    - name: Make sure a Nginx unit is running
+      ansible.builtin.systemd_service:
+        state: restarted
+        name: nginx
