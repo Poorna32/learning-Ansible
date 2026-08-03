@@ -1,5 +1,5 @@
 - name: Task Variable Playbook
-  hosts: all
+  hosts: localhost
   vars:
     URL_PLAY: www.play.com
   tasks:
