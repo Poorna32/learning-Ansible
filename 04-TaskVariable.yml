@@ -3,6 +3,6 @@
   tasks:
     - name: Print Task Variable
       ansible.builtin.debug:
-        vars:
+        msg: URL_TASK - {{ URL_TASK }}
+      vars:
           URL_TASK: www.task.com
-      msg: URL_TASK - {{ URL_TASK }}
