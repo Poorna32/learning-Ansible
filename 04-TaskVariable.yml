@@ -1,8 +1,8 @@
 - name: Task Variable Playbook
   hosts: localhost
   tasks:
-    - name: Print task variable
+    - name: Print Task Variable
       ansible.builtin.debug:
-        msg: URL_TASK - {{ URL_TASK }}
-      vars:
-        URL_TASK: www.facebook.com
+        vars:
+          URL_TASK: www.task.com
+      msg: URL_TASK - {{ URL_TASK }}
