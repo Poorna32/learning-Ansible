@@ -1,8 +1,8 @@
 - name: Task Variable Playbook
-  hosts: localhost
+  hosts: all
   vars:
-    URL_PLAY: www.poornachandra.online
+    URL_PLAY: www.play.com
   tasks:
-    - name: Print play variable
+    - name: Print Play Variable
       ansible.builtin.debug:
         msg: URL_PLAY - {{ URL_PLAY }}
